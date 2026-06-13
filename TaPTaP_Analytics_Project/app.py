@@ -15,11 +15,9 @@ st.set_page_config(
 # LOAD DATA
 # =========================
 
-df = pd.read_excel(
-    "TaPTaP_College_Engagement_Analytics_50000.xlsx",
-    sheet_name="Activity_Data"
+df = pd.read_csv(
+    "TaPTaP_College_Engagement_Analytics_50000.csv"
 )
-
 df["Activity_Date"] = pd.to_datetime(df["Activity_Date"])
 
 # =========================
